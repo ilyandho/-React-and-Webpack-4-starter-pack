@@ -15,6 +15,14 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          "handlebars-loader", // handlebars loader expects raw resource string
+          "extract-loader",
+          "css-loader"
+        ]
       }
     ]
   },
