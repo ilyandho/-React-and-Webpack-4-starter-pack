@@ -1,4 +1,5 @@
 $h1-bg-color: tan;
 h1 {
   background-color: $h1-bg-color;
+  user-select: none;
 }
