@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWepackPlugin = require("html-webpack-plugin");
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+/*
 module.exports = {
   entry: "./src/index.js",
   output: {
@@ -17,8 +18,11 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
           "handlebars-loader", // handlebars loader expects raw resource string
           "extract-loader",
           "css-loader"
@@ -29,6 +33,50 @@ module.exports = {
   plugins: [
     new HtmlWepackPlugin({
       template: "./src/index.html"
-    })
+    }),
+    new MiniCssExtractPlugin({})
   ]
+};
+
+*/
+
+//const path = require("path");
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist")
+  },
+
+  plugins: [
+    new HtmlWepackPlugin({
+      title: "Webpack 4 Starter Pack",
+      template: "./src/index.html",
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    })
+  ],
+  resolve: {
+    extensions: [".js"]
+  },
+  module: {
+    rules: [
+      {
+        test: [/.js$/],
+        exclude: /(node_modules)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["babel-preset-env"]
+          }
+        }
+      },
+      {
+        test: [/.css$/],
+        use: ["style-loader", "css-loader"]
+      }
+    ]
+  }
 };
