@@ -75,7 +75,12 @@ module.exports = {
       },
       {
         test: [/.css$/],
+        include: [path.resolve(__dirname, "not_exist_path")],
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: [/.css$|.scss$/],
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   }
