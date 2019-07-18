@@ -1,0 +1,38 @@
+.list {
+  width: 90%;
+  margin: auto;
+
+  .list-item {
+    width: 100%;
+    display: flex;
+    margin-top: 0.5em;
+
+    #todo {
+      display: inline-block;
+      width: 70%;
+    }
+    #done {
+      width: 10%;
+      font-size: 0.7em;
+      padding-top: 0.3em;
+      font-weight: 700;
+      text-align: center;
+      background: rgb(21, 226, 21);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      cursor: pointer;
+    }
+
+    #delete {
+      width: 10%;
+      font-size: 0.7em;
+      padding-top: 0.3em;
+      font-weight: 700;
+      text-align: center;
+      background-color: red;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}

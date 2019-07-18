@@ -1,0 +1,44 @@
+$primaryColor: #191d32;
+$secondaryColor: #fc7753;
+$backgroundColor: #f3ffb9;
+$otherColor: #330036;
+//font-family: 'Poppins', sans-serif;
+//font-family: 'Literata', serif;
+
+.add-todo {
+  color: $primaryColor;
+  font-size: 1.2em;
+  p {
+    padding: 0.5em;
+  }
+  form {
+    width: 70%;
+    height: 3em;
+    margin: auto;
+    margin-top: 1.5em;
+
+    input {
+      width: 65%;
+      float: left;
+      height: 2.6em;
+      border-top-left-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
+      color: $secondaryColor;
+      padding-left: 2em;
+      border: 1px solid #ccc;
+    }
+    button {
+      border-top-right-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+      padding: auto 2em;
+      color: $primaryColor;
+      font-size: 0.7em;
+      outline: none;
+      background: $secondaryColor;
+      width: 35%;
+      float: right;
+      height: 2.5em;
+      border: 0px solid #1a181a;
+    }
+  }
+}

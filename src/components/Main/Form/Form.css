@@ -1,0 +1,41 @@
+.add-todo {
+  color: #191d32;
+  font-size: 1.2em;
+}
+
+.add-todo p {
+  padding: 0.5em;
+}
+
+.add-todo form {
+  width: 70%;
+  height: 3em;
+  margin: auto;
+  margin-top: 1.5em;
+}
+
+.add-todo form input {
+  width: 65%;
+  float: left;
+  height: 2.6em;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  color: #fc7753;
+  padding-left: 2em;
+  border: 1px solid #ccc;
+}
+
+.add-todo form button {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  padding: auto 2em;
+  color: #191d32;
+  font-size: 0.7em;
+  outline: none;
+  background: #fc7753;
+  width: 35%;
+  float: right;
+  height: 2.5em;
+  border: 0px solid #1a181a;
+}
+/*# sourceMappingURL=Form.css.map */

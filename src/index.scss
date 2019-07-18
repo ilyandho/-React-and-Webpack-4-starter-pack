@@ -1,0 +1,15 @@
+$primaryColor: #191d32;
+$secondaryColor: #fc7753;
+$backgroundColor: #f3ffb9;
+$otherColor: #330036;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  color: $primaryColor;
+}

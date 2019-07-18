@@ -1,0 +1,17 @@
+$primaryColor: #191d32;
+$secondaryColor: #fc7753;
+$backgroundColor: #f3ffb9;
+$otherColor: #330036;
+//font-family: 'Poppins', sans-serif;
+//font-family: 'Literata', serif;
+.main-header {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: $secondaryColor;
+  color: $otherColor;
+  box-shadow: -2px -1px 13px -1px rgba(0, 0, 0, 0.75);
+  margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
+  vertical-align: center;
+}

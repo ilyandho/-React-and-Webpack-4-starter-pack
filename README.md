@@ -1,6 +1,6 @@
-# React and Webpack 4 starter pack
+# My Todos App
 
-This is boiler plate for REact with Webpack
+This is a todos App that marks and deletes completed tasks
 
 ### Install dependencies
 
